@@ -10,4 +10,23 @@
       directory="static"
       />
 
+    <browser:page
+      name="list_tasks"
+      class="collective.faceted.task.browser.list_tasks.TasksListView"
+      template="templates/list_tasks.pt"
+      for="collective.task.behaviors.ITaskContainer"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      name="collective.task.list_tasks"
+      class="collective.faceted.task.browser.list_tasks.TasksListViewlet"
+      template="templates/list_tasks.pt"
+      for="collective.task.behaviors.ITaskContainer"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      layer="collective.faceted.task.interfaces.ICollectiveFacetedTaskLayer"
+      permission="zope2.View"
+      view="plone.app.layout.globals.interfaces.IViewView"
+      />
+
 </configure>
