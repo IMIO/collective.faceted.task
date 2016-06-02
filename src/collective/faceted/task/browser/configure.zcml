@@ -44,4 +44,13 @@
       view="plone.app.layout.globals.interfaces.IViewView"
       />
 
+      <adapter
+      name="TitleColumn"
+      for="zope.interface.Interface
+           zope.interface.Interface
+           .table.FacetedTasksTable"
+      provides="z3c.table.interfaces.IColumn"
+      factory=".table.TitleColumn"
+      />
+
 </configure>
