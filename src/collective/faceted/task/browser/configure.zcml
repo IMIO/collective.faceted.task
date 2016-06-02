@@ -11,6 +11,21 @@
       />
 
     <browser:page
+      name="faceted_task_config"
+      class="collective.faceted.task.browser.config_view.FacetedTaskConfigView"
+      for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+      permission="zope2.View"
+      />
+
+    <adapter
+        for="collective.faceted.task.browser.config_view.FacetedTaskConfigView
+             zope.publisher.interfaces.browser.IBrowserRequest"
+        provides="zope.traversing.interfaces.ITraversable"
+        factory=".config_view.FacetedTaskConfigViewTraverser"
+        name="view"
+    />
+
+    <browser:page
       name="list_tasks"
       class="collective.faceted.task.browser.list_tasks.TasksListView"
       template="templates/list_tasks.pt"
