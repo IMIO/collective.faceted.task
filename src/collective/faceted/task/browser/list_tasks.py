@@ -2,18 +2,20 @@
 
 from plone import api
 
+from collective.eeafaceted.z3ctable.browser.views import FacetedTableView
+
 from collective.faceted.task import _
 from collective.faceted.task.browser.table import FacetedTasksTable
 
 from collective.task.behaviors import ITask
 
-from Products.Five.browser import BrowserView
+from Products.CMFPlone.PloneBatch import Batch
 
 from zope.interface import implements
 from zope.viewlet.interfaces import IViewlet
 
 
-class TasksListBase(BrowserView):
+class TasksListBase(FacetedTableView):
     """
     Base class for both the view and viewlet
     rendering the task listing.
@@ -23,6 +25,11 @@ class TasksListBase(BrowserView):
 
     def update(self):
         self.table = self.__table__(self.context, self.request)
+        brains = self.query_tasks()
+        self.table.results = [b.getObject() for b in brains]
+        self.table.update()
+
+    def query_tasks(self):
         catalog = api.portal.get_tool('portal_catalog')
         container_path = '/'.join(self.context.getPhysicalPath())
         brains = catalog.searchResults(
@@ -30,8 +37,12 @@ class TasksListBase(BrowserView):
             path={'query': container_path},
             sort_on='getObjPositionInParent'
         )
-        self.table.results = [b.getObject() for b in brains]
-        self.table.update()
+        return brains
+
+    def tasks_batch(self):
+        brains = self.query_tasks()
+        batch = Batch(brains, len(brains))
+        return batch
 
 
 class TasksListViewlet(TasksListBase):

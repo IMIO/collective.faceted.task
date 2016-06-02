@@ -34,9 +34,9 @@ class FacetedTaskConfigView(BrowserView):
     def publishTraverse(self, request, name):
         """
         """
-        return self.traverse(name)
+        return self.unrestrictedTraverse(name)
 
-    def traverse(self, name):
+    def unrestrictedTraverse(self, name):
         """
         """
         return self.context.unrestrictedTraverse(name)
@@ -50,4 +50,4 @@ class FacetedTaskConfigViewTraverser(view):
         """
         """
         config_view = self.context
-        return config_view.traverse(name)
+        return config_view.unrestrictedTraverse(name)
