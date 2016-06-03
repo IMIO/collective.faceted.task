@@ -29,7 +29,8 @@ class FacetedTaskConfigView(BrowserView):
         return self.context()
 
     def update(self):
-        """ """
+        """
+        """
 
     def publishTraverse(self, request, name):
         """

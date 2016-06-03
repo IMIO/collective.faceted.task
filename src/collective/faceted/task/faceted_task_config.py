@@ -12,9 +12,9 @@ class FacetedTaskConfig(Container):
     FacetedTask config utility factory.
     """
 
-    UID = None
-
     implements(IFacetedTaskConfig)
+
+    UID = None
 
     def __call__(self):
         return self.unrestrictedTraverse('@@configure_faceted.html')()
