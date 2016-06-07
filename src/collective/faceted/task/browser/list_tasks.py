@@ -6,6 +6,7 @@ from collective.eeafaceted.z3ctable.browser.views import FacetedTableView
 
 from collective.faceted.task import _
 from collective.faceted.task.browser.table import FacetedTasksTable
+from collective.faceted.task.interfaces import IFacetedTaskContainer
 
 from collective.task.behaviors import ITask
 
@@ -66,3 +67,15 @@ class TasksListView(TasksListBase):
     """
     View displaying tasks list for current task container object.
     """
+
+
+class IsFacetedTaskContainer(object):
+    """
+    """
+
+    def __init__(self, context, request):
+        self.context = context
+        self.request = request
+
+    def __call__(self):
+        return IFacetedTaskContainer.providedBy(self.context)

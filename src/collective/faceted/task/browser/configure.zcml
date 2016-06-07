@@ -34,7 +34,7 @@
       permission="zope2.View"
       />
 
-    <!--browser:viewlet
+    <browser:viewlet
       name="collective.task.list_tasks"
       class="collective.faceted.task.browser.list_tasks.TasksListViewlet"
       template="templates/list_tasks.pt"
@@ -43,13 +43,27 @@
       layer="collective.faceted.task.interfaces.ICollectiveFacetedTaskLayer"
       permission="zope2.View"
       view="plone.app.layout.globals.interfaces.IViewView"
-      /-->
+      />
 
-      <adapter
+    <browser:view
+      for="collective.task.behaviors.ITaskContainer"
+      name="faceted-table-view"
+      class=".task_table_view.FacetedTaskTableView"
+      permission="zope2.View"
+      />
+
+    <browser:view
+      for="*"
+      name="is_faceted_tasks_container"
+      class=".list_tasks.IsFacetedTaskContainer"
+      permission="zope2.View"
+      />
+
+    <adapter
       name="TitleColumn"
       for="zope.interface.Interface
            zope.interface.Interface
-           .table.FacetedTasksTable"
+           ..interfaces.IFacetedTasksTable"
       provides="z3c.table.interfaces.IColumn"
       factory=".table.TitleColumn"
       />

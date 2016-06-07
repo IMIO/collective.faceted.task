@@ -6,7 +6,7 @@ from collective.faceted.task.interfaces import IFacetedTaskConfig
 
 from Products.Five import BrowserView
 
-from zope.component import queryUtility
+from zope.component import getUtility
 from zope.interface import implements
 from zope.publisher.interfaces import IPublishTraverse
 from zope.traversing.namespace import view
@@ -20,7 +20,7 @@ class FacetedTaskConfigView(BrowserView):
     def __init__(self, context, request):
         """
         """
-        faceted_task_config = queryUtility(IFacetedTaskConfig)
+        faceted_task_config = getUtility(IFacetedTaskConfig)
         self.context = aq_base(faceted_task_config).__of__(context)
         self.request = request
 
