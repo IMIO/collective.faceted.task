@@ -13,12 +13,17 @@ class FacetedTaskTableView(FacetedTableView):
 
     implements(IFacetedTasksTable)
 
+    ignoreColumnWeight = True
+
     def _getViewFields(self):
         """Returns fields we want to show in the table."""
+
         col_names = [
-            u'TitleColumn',
-            u'assigned_user_column',
-            u'status',
+            u'simple_status',
+            u'path',
+            u'CreationDate',
             u'due_date',
+            u'assigned_user_column',
         ]
+
         return col_names
