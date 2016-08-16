@@ -21,9 +21,9 @@ class FacetedTaskTableView(FacetedTableView):
         col_names = [
             u'simple_status',
             u'path',
+            u'assigned_user_column',
             u'CreationDate',
             u'due_date',
-            u'assigned_user_column',
         ]
 
         return col_names
