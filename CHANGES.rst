@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.3 (unreleased)
+0.3 (2017-01-10)
 ----------------
 
 - remove task link from header_path column.
