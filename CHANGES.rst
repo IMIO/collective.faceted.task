@@ -5,7 +5,8 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- remove task link from header_path column.
+  [sdelcourt]
 
 
 0.2 (2016-06-22)
