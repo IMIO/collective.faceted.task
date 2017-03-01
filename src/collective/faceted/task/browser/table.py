@@ -40,5 +40,4 @@ class TitleColumn(BaseColumn):
         if tail:
             title = u'<span class="task_url_tail">{}/</span>{}'.format(tail, title)
 
-        cell = u'<a href="{0}">{1}</a>'.format(item.getURL(), title)
-        return cell
+        return title
