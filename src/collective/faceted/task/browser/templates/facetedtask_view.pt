@@ -25,12 +25,16 @@
 <div class="faceted-form" metal:define-macro="widgets" id="faceted-form"
   tal:define="mode view/mode | string:view" tal:attributes="data-mode mode">
 
-  <div tal:define="member context/@@plone_portal_state/member;" style="float:right">
-    <form tal:condition="python: member.has_permission('urban: Add task', context)" name="addTask"
-          tal:attributes="action python: context.absolute_url() + '/createObject?type_name=task'" action="" method="post">
-      <input type="submit" class="context apButton contenttype-task" id="addTask" value="new task" i18n:attributes="value" />
-    </form>
-  </div>
+    <div id="linkAddTask" tal:define="member context/@@plone_portal_state/member;" tal:condition="python: member.has_permission('urban: Add task', context)" name="addTask" tal:attributes="action python: context.absolute_url() + '/createObject?type_name=task'">
+        <img class="urban-add-icon" src="icon_add.gif" />
+        <a href="#" i18n:translate="">
+            Ajouter tâche
+        </a>
+        <!--<form tal:condition="python: member.has_permission('urban: Add task', context)" name="addTask"-->
+              <!--tal:attributes="action python: context.absolute_url() + '/createObject?type_name=task'" action="" method="post">-->
+          <!--<input type="submit" class="context apButton contenttype-task" id="addTask" value="new task" i18n:attributes="value" />-->
+        <!--</form>-->
+    </div>
 
   <!-- Basic/Extended search -->
   <div class="faceted-sections-buttons">
