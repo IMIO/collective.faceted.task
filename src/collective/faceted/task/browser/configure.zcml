@@ -12,6 +12,14 @@
       />
 
     <browser:page
+      for="eea.facetednavigation.interfaces.IFacetedNavigable"
+      name="facetedtask_view"
+      template="templates/facetedtask_view.pt"
+      class=".faceted_view.FacetedTaskContainerView"
+      permission="zope2.View"
+    />
+
+    <browser:page
       name="faceted_task_config"
       class="collective.faceted.task.browser.config_view.FacetedTaskConfigView"
       for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
