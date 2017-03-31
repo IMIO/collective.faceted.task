@@ -7,7 +7,7 @@
   <object name="facetedtasks_listing" meta_type="CMF Action" i18n:domain="collective.faceted.task">
    <property name="title" i18n:translate="">Tasks</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:$object_url/facetednavigation_view</property>
+   <property name="url_expr">string:$object_url/facetedtask_view</property>
    <property name="icon_expr"></property>
    <property
            name="available_expr">context/@@is_faceted_tasks_container</property>

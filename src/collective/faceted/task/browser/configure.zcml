@@ -11,6 +11,35 @@
       directory="static"
       />
 
+    <adapter
+      for="Products.CMFCore.interfaces.IFolderish
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           plone.dexterity.interfaces.IDexterityFTI"
+      provides="zope.publisher.interfaces.browser.IBrowserPage"
+      factory=".task_view.TaskAddView"
+      name="task"
+    />
+    <class class=".task_view.TaskAddView">
+      <require
+        permission="cmf.AddPortalContent"
+        interface="zope.publisher.interfaces.browser.IBrowserPage"
+       />
+    </class>
+
+    <browser:page
+      for="collective.task.behaviors.ITask"
+      name="edit"
+      class=".task_view.TaskEditForm"
+      permission="zope2.View"
+    />
+
+    <browser:page
+      for="collective.task.behaviors.ITask"
+      name="view"
+      class=".task_view.TaskView"
+      permission="zope2.View"
+    />
+
     <browser:page
       for="eea.facetednavigation.interfaces.IFacetedNavigable"
       name="facetedtask_view"
