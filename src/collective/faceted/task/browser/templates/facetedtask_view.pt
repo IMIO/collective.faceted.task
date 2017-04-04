@@ -26,7 +26,7 @@
   tal:define="mode view/mode | string:view" tal:attributes="data-mode mode">
 
   <div id="linkAddTask"
-       tal:condition="python: member.has_permission('urban: Add task', context)"
+       tal:condition="python: member.has_permission('Add portal content', context)"
        tal:define="member context/@@plone_portal_state/member;">
     <img class="urban-add-icon" src="icon_add.gif" />
     <a tal:attributes="href python: context.absolute_url() + '/++add++task'"
