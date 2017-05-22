@@ -23,6 +23,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:registerProfile
+        name="base"
+        title="collective.faceted.task base"
+        directory="profiles/base"
+        description="Base profile for collective.faceted.task"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
     <genericsetup:importStep
         name="collective.faceted.task-postInstall"
         title="collective.faceted.task post_install import step"
