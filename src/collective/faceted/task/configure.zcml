@@ -10,6 +10,7 @@
     <five:registerPackage package="." initialize=".initialize" />
 
     <include package="collective.task" />
+    <include package="collective.eeafaceted.z3ctable" />
     <include package="plone.api" />
 
     <include package=".browser" />
