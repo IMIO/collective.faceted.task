@@ -5,7 +5,8 @@ Changelog
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add base profile to fix installation dependencies.
+  [mpeeters]
 
 
 0.3 (2017-01-10)
