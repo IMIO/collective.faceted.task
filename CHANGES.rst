@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.4 (unreleased)
+0.4 (2018-06-05)
 ----------------
 
 - Add base profile to fix installation dependencies.
