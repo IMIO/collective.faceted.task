@@ -33,11 +33,3 @@ def set_up_faceted_task_config(context):
         xml_faceted_config = open('%s/faceted_task_config.xml' % os.path.dirname(__file__))
         importer = faceted_task_config.unrestrictedTraverse('@@faceted_exportimport')
         importer.import_xml(import_file=xml_faceted_config)
-
-        # allow js edit ressources on the faceted_task_config view
-        portal_javascripts = api.portal.get_tool('portal_javascripts')
-        faceted_edit_js = portal_javascripts.getResource('faceted_edit.js')
-        condition = "{} or 'faceted_task_config' in request.URL0".format(
-            faceted_edit_js.getExpression()
-        )
-        faceted_edit_js.setExpression(condition)
