@@ -30,7 +30,7 @@
        tal:define="member context/@@plone_portal_state/member;">
     <img class="urban-add-icon" src="icon_add.gif" />
     <a tal:attributes="href python: context.absolute_url() + '/++add++task'"
-       class="" href="">New task
+       class="" href="" i18n:translate="">New task
     </a>
 
   </div>

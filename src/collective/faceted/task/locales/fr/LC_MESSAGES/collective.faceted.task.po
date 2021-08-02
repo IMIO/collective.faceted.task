@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-06 14:30+0000\n"
+"POT-Creation-Date: 2021-07-29 08:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../configure.zcml:24
+#: ../configure.zcml:33
+msgid "Base profile for collective.faceted.task"
+msgstr ""
+
+#: ../configure.zcml:25
 msgid "Installs the collective.faceted.task add-on."
 msgstr ""
 
@@ -26,7 +30,7 @@ msgstr ""
 msgid "Tasks"
 msgstr "Tâches"
 
-#: ../browser/configure.zcml:35
+#: ../browser/configure.zcml:74
 msgid "Tasks faceted table items"
 msgstr ""
 
@@ -38,8 +42,12 @@ msgstr ""
 msgid "There is no task for this content."
 msgstr "Aucune tâche"
 
-#: ../configure.zcml:24
+#: ../configure.zcml:25
 msgid "collective.faceted.task"
+msgstr ""
+
+#: ../configure.zcml:33
+msgid "collective.faceted.task base"
 msgstr ""
 
 #: ../testing.zcml:16
