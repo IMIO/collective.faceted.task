@@ -14,25 +14,17 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../configure.zcml:33
-msgid "Base profile for collective.faceted.task"
+#: ../browser/templates/facetedtask_view.pt:41
+msgid "Less filters"
 msgstr ""
 
-#: ../configure.zcml:25
-msgid "Installs the collective.faceted.task add-on."
+#: ../browser/templates/facetedtask_view.pt:40
+msgid "More filters"
 msgstr ""
 
-#: ../testing.zcml:16
-msgid "Steps to ease tests of collective.faceted.task"
-msgstr ""
-
-#: ../profiles/default/actions.xml
-msgid "Tasks"
-msgstr "Tâches"
-
-#: ../browser/configure.zcml:74
-msgid "Tasks faceted table items"
-msgstr ""
+#: ../browser/templates/facetedtask_view.pt:32
+msgid "New task"
+msgstr "Nouvelle tâche"
 
 #: ../browser/list_tasks.py:55
 msgid "Tasks list"
@@ -40,16 +32,16 @@ msgstr ""
 
 #: ../browser/list_tasks.py:24
 msgid "There is no task for this content."
-msgstr "Aucune tâche"
-
-#: ../configure.zcml:25
-msgid "collective.faceted.task"
 msgstr ""
 
-#: ../configure.zcml:33
-msgid "collective.faceted.task base"
-msgstr ""
+#:../widgets/checkbox/widget.pt
+msgid "AutomatedMacroTask"
+msgstr "Macro-tâche configurable"
 
-#: ../testing.zcml:16
-msgid "collective.faceted.task tests"
-msgstr ""
+#:../widgets/checkbox/widget.pt
+msgid "AutomatedTask"
+msgstr "Tâche configurable"
+
+#:../widgets/checkbox/widget.pt
+msgid "Task"
+msgstr "Tâche"
