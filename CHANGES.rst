@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.5 (unreleased)
+0.5 (2023-04-06)
 ----------------
 
 - add translations
