@@ -29,6 +29,8 @@ class TitleColumn(BaseColumn):
     Column that displays title.
     """
 
+    escape = False
+
     def renderCell(self, item):
         adaptedTask = TaskAdapter(item.getObject())
         title = adaptedTask.get_full_tree_title().decode('utf-8')
