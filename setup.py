@@ -20,7 +20,7 @@ long_description = (
 setup(
     name='collective.faceted.task',
     version='0.5.dev0',
-    description="",
+    description="Faceted tools and view for tasks",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -29,6 +29,8 @@ setup(
         "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Zope Plone',
     author='Franck NGAHA',

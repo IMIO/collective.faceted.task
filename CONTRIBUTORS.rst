@@ -1,1 +1,3 @@
-- Franck NGAHA, franck.o.ngaha@gmail.com
+- Franck NGAHA (iMio)
+- Simon Delcourt (iMio)
+- Martin Peeters (Affinitic)
