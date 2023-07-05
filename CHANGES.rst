@@ -5,7 +5,8 @@ Changelog
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Do not escape z3c.table column title
+  [sdelcourt, mpeeters]
 
 
 0.4 (2018-06-05)
