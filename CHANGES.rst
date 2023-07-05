@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.5 (unreleased)
-----------------
+1.0.0 (2023-07-05)
+------------------
 
 - Do not escape z3c.table column title
   [sdelcourt, mpeeters]
