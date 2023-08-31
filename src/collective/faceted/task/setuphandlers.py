@@ -36,8 +36,9 @@ def set_up_faceted_task_config(context):
 
         # allow js edit ressources on the faceted_task_config view
         portal_javascripts = api.portal.get_tool('portal_javascripts')
-        faceted_edit_js = portal_javascripts.getResource('faceted_edit.js')
-        condition = "{} or 'faceted_task_config' in request.URL0".format(
-            faceted_edit_js.getExpression()
-        )
-        faceted_edit_js.setExpression(condition)
+        faceted_edit_js_list = [js for js in portal_javascripts.getResources() if js.getBundle() == 'faceted-edit']
+        for js in faceted_edit_js_list:
+            condition = "{} or 'faceted_task_config' in request.URL0".format(
+                js.getExpression()
+            )
+            js.setExpression(condition)
