@@ -6,7 +6,7 @@
    <property name="title">État</property>
    <property name="position">center</property>
    <property name="section">default</property>
-   <property name="hidden">0</property>
+   <property name="hidden">False</property>
    <property name="count">0</property>
    <property name="sortcountable">0</property>
    <property name="hidezerocount">0</property>
@@ -24,7 +24,7 @@
    <property name="title">Assigné à</property>
    <property name="position">center</property>
    <property name="section">default</property>
-   <property name="hidden">0</property>
+   <property name="hidden">False</property>
    <property name="count">0</property>
    <property name="sortcountable">0</property>
    <property name="hidezerocount">0</property>
@@ -39,7 +39,7 @@
    <property name="title">Results per page</property>
    <property name="position">center</property>
    <property name="section">default</property>
-   <property name="hidden">0</property>
+   <property name="hidden">False</property>
    <property name="start"></property>
    <property name="end">100</property>
    <property name="step">20</property>
@@ -50,7 +50,7 @@
    <property name="title">Portal type</property>
    <property name="position">center</property>
    <property name="section">default</property>
-   <property name="hidden">0</property>
+   <property name="hidden">False</property>
    <property name="count">1</property>
    <property name="sortcountable">0</property>
    <property name="hidezerocount">0</property>
@@ -72,7 +72,7 @@
    <property name="title">Sort on</property>
    <property name="position">right</property>
    <property name="section">default</property>
-   <property name="hidden">1</property>
+   <property name="hidden">True</property>
    <property
       name="vocabulary">eea.faceted.vocabularies.CatalogIndexes</property>
    <property name="default">path</property>

@@ -43,7 +43,7 @@ setup(
     install_requires=[
         'collective.task',
         'collective.eeafaceted.z3ctable',
-        'eea.facetednavigation',
+        'eea.facetednavigation>=10.0',
         'five.grok',
         'plone.api',
         'setuptools',
