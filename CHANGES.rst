@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2023-09-01)
 ------------------
 
 - Fix new urban instance install [URB-2868, URB-2870]

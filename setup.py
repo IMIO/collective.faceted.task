@@ -19,7 +19,7 @@ long_description = (
 
 setup(
     name='collective.faceted.task',
-    version='1.0.1.dev0',
+    version='1.0.1',
     description="Faceted tools and view for tasks",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
