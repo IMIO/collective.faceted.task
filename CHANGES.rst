@@ -5,7 +5,8 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix facet config xml on new urban install [URB-2870]
+  [jchandelle]
 
 
 1.0.1 (2023-09-01)
