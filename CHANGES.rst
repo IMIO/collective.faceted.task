@@ -5,7 +5,7 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Fix facet config xml new urban instance install [URB-2870]
+- Fix facet config xml on new urban install [URB-2870]
   [jchandelle]
 
 
