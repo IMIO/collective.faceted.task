@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2023-09-05)
 ------------------
 
 - Fix facet config xml on new urban install [URB-2870]
